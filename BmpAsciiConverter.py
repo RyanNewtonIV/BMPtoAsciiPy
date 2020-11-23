@@ -78,8 +78,6 @@ def readBMP(filePath):
         for x in i:
             stringtoPrint += x.hex()
 
-        #print(stringtoPrint)
-
     """This is a Test Area"""
 
     for i in columns:
@@ -151,7 +149,6 @@ def returnBytes(file, numberOfBytes):
         bytesToReturn += file.read(1)
         index += 1
 
-    #print(bytesToReturn.hex())
     return bytesToReturn
 
 
@@ -193,7 +190,6 @@ def returnIntFromBytes(file, numberOfBytes):
 
 
 def processAnimation(filePathString,animationStartFrame,animationEndFrame):
-    fileIndexPadding = "000"
     currentFrame = animationStartFrame
     endFrame = animationEndFrame
     animationString = []
